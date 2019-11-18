@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E19D05</color>
+    <color name="colorPrimaryDark">#E19D05</color>
+    <color name="colorAccent">#E19D05</color>
+
+    <color name="colorPrimario">#E19D05</color>
+    <color name="colorBotones">#FFB000</color>
+    <color name="colorDatos01">#5A4ECF</color>
+    <color name="ColorDatos02">#B5E6EE</color>
+    <color name="colorDatos03">#1700FF</color>
+    <color name="colorDatos04">#FF0000</color>
+    <color name="colorPalabras">#ffffff</color>
+</resources>
