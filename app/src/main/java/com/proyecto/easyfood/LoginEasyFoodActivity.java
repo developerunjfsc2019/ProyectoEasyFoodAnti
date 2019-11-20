@@ -122,6 +122,10 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         builder.setView(view);
         final AlertDialog dialog = builder.create();
         dialog.show();
+        /**
+         TextView txt = view.findViewById(R.id.text_dialog_personalizadodatosvacios);
+         txt.setText("DATOS VACIOS");
+         **/
 
     }
 
