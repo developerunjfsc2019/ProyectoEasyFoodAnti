@@ -2,24 +2,24 @@ package com.proyecto.easyfood;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.DialogInterface;
+
+
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginEasyFoodActivity extends AppCompatActivity {
+
     private EditText etxtNumeroDni;
     private EditText etxtContrasena;
     private Button btnIniciarSesion;
     private Long dni;
     private String contrasena;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,55 +27,107 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         etxtNumeroDni=(EditText)findViewById(R.id.etxtNumeroDni);
         etxtContrasena=(EditText)findViewById(R.id.etxtContrasena);
         btnIniciarSesion=(Button)findViewById(R.id.btnIniciarSesion);
+
         btnIniciarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+
                 try {
                     if(etxtNumeroDni.getText().toString().trim().isEmpty() || etxtContrasena.getText().toString().trim().isEmpty() ){
-                        mostrarDialogoPersonalizado();
+                        mostrarDialogoPersonalizadoDatosVacios();
                     }else{
                         dni=Long.parseLong(etxtNumeroDni.getText().toString().trim());
                         contrasena=etxtContrasena.getText().toString().trim();
-                        if(dni==72812719  && contrasena.equals("72812719")){
-                            Intent intent=new Intent(getApplicationContext(),InicioEasyFood.class);
+
+                        if(((dni ==72812719)) && !contrasena.equals("72812719")){
+                            mostrarDialogoPersonalizadoContrasena();
+                        } if ((!(dni ==72812719)) && contrasena.equals("72812719")){
+                            mostrarDialogoPersonalizadoUsuario();
+                        } if ((!(dni ==72812719)) && !contrasena.equals("72812719")){
+                            mostrarDialogoPersonalizadoNadaCorrecto();
+                        } if (((dni ==72812719))  && contrasena.equals("72812719")) {
+                            mostrarDialogoPersonalizadoTodoOk();
+                            Intent intent = new Intent(getApplicationContext(), InicioEasyFood.class);
                             startActivity(intent);
-                        }else{
-                            Toast.makeText(getApplicationContext(),"Error",Toast.LENGTH_LONG).show();
-                            mostrarDialogoPersonalizado();
                         }
                     }
-
-
                 }catch (Exception e){
                     Toast.makeText(getApplicationContext(),"Error",Toast.LENGTH_LONG).show();
                 }
 
+
             }
         });
     }
 
-    private void mostrarDialogoPersonalizado(){
+    private void mostrarDialogoPersonalizadoContrasena(){
         AlertDialog.Builder builder = new AlertDialog.Builder(LoginEasyFoodActivity.this);
-
         LayoutInflater inflater = getLayoutInflater();
+        View view = inflater.inflate(R.layout.dialog_personalizadocontrasena,null);
+        builder.setView(view);
+        final AlertDialog dialog = builder.create();
+        dialog.show();
+        /**
+         TextView txt = view.findViewById(R.id.text_dialogcontrasena);
+         txt.setText("Contraseña Incorrecta");
+         **/
+    }
 
-        View view = inflater.inflate(R.layout.dialog_personalizado,null);
+    private void mostrarDialogoPersonalizadoUsuario(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(LoginEasyFoodActivity.this);
+        LayoutInflater inflater = getLayoutInflater();
+        View view = inflater.inflate(R.layout.dialog_personalizadousuarioincorrecto,null);
+        builder.setView(view);
+        final AlertDialog dialog = builder.create();
+        dialog.show();
+        /**
+         TextView txt = view.findViewById(R.id.text_dialog_personalizadousuario);
+         txt.setText("Usuario Incorrecto");
+         **/
 
+    }
+
+    private void mostrarDialogoPersonalizadoTodoOk(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(LoginEasyFoodActivity.this);
+        LayoutInflater inflater = getLayoutInflater();
+        View view = inflater.inflate(R.layout.dialog_personalizadodatoscorrectos,null);
         builder.setView(view);
         final AlertDialog dialog = builder.create();
         dialog.show();
 
-        TextView txt = view.findViewById(R.id.text_dialog);
-        txt.setText("Los campos no tienen que estar vacios");
+        /**
+         TextView txt = view.findViewById(R.id.text_dialog_personalizadotodook);
+         txt.setText("INGRESO EXISTOSO");
+         **/
 
-        ImageButton imgbtnError = view.findViewById(R.id.imgbtnError);
-        imgbtnError.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              dialog.dismiss();
-            }
-        });
     }
+    private void mostrarDialogoPersonalizadoNadaCorrecto(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(LoginEasyFoodActivity.this);
+        LayoutInflater inflater = getLayoutInflater();
+        View view = inflater.inflate(R.layout.dialog_personalizadodatosincorrectos,null);
+        builder.setView(view);
+        final AlertDialog dialog = builder.create();
+        dialog.show();
+
+        /**
+         TextView txt = view.findViewById(R.id.text_dialog_personalizadonadacorrecto);
+         txt.setText("USUARIO Y/O CONTRASEÑA INCORRECTA");
+         **/
+    }
+    private void mostrarDialogoPersonalizadoDatosVacios(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(LoginEasyFoodActivity.this);
+        LayoutInflater inflater = getLayoutInflater();
+        View view = inflater.inflate(R.layout.dialog_personalizadodatosvacios,null);
+        builder.setView(view);
+        final AlertDialog dialog = builder.create();
+        dialog.show();
+        /**
+         TextView txt = view.findViewById(R.id.text_dialog_personalizadodatosvacios);
+         txt.setText("DATOS VACIOS");
+         **/
+
+    }
+
 
 }
