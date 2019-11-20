@@ -22,7 +22,6 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 
 public class InicioEasyFood extends AppCompatActivity {
-
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
