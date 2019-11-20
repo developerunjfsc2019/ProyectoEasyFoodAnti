@@ -3,6 +3,11 @@
     <string name="iniciar_sesion">Iniciar sesión</string>
     <string name="numero_dni">Numero de DNI</string>
     <string name="contrasena">Contraseña</string>
+    <string name="datos_vacios">DATOS VACIOS</string>
+    <string name="datos_incorrecto">DATOS INCORRECTOS</string>
+    <string name="contraseña_incorrecta">CONTRASEÑA INCORRECTA</string>
+    <string name="datos_correctos">Bienvenido a EASYFOOD</string>
+    <string name="usuario_incorrecto">USUARIO INCORRECTO</string>
     <string name="title_activity_inicio_easy_food">InicioEasyFood</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
