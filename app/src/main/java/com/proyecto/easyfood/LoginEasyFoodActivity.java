@@ -79,10 +79,7 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
             }
         }, 1500);
 
-        /**
-         TextView txt = view.findViewById(R.id.text_dialogcontrasena);
-         txt.setText("Contraseña Incorrecta");
-         **/
+
     }
 
     private void mostrarDialogoPersonalizadoUsuario(){
@@ -101,10 +98,7 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         }, 1500);
 
 
-        /**
-         TextView txt = view.findViewById(R.id.text_dialog_personalizadousuario);
-         txt.setText("Usuario Incorrecto");
-         **/
+
 
     }
 
@@ -123,10 +117,7 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
             }
         }, 1500);
 
-        /**
-         TextView txt = view.findViewById(R.id.text_dialog_personalizadotodook);
-         txt.setText("INGRESO EXISTOSO");
-         **/
+
 
     }
     private void mostrarDialogoPersonalizadoNadaCorrecto(){
@@ -144,10 +135,7 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
             }
         }, 1500);
 
-        /**
-         TextView txt = view.findViewById(R.id.text_dialog_personalizadonadacorrecto);
-         txt.setText("USUARIO Y/O CONTRASEÑA INCORRECTA");
-         **/
+
     }
     private void mostrarDialogoPersonalizadoDatosVacios(){
         AlertDialog.Builder builder = new AlertDialog.Builder(LoginEasyFoodActivity.this);
@@ -163,10 +151,7 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
                 timercancel.cancel();
             }
         }, 1500);
-        /**
-         TextView txt = view.findViewById(R.id.text_dialog_personalizadodatosvacios);
-         txt.setText("DATOS VACIOS");
-         **/
+     
 
     }
 
