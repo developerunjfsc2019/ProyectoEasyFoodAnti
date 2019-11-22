@@ -75,9 +75,9 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         timercancel.schedule(new TimerTask() {
             public void run() {
                 dialog.dismiss();
-                timercancel.cancel(); //kill system time
+                timercancel.cancel();
             }
-        }, 1500); // for 1.5 second
+        }, 1500);
 
         /**
          TextView txt = view.findViewById(R.id.text_dialogcontrasena);
@@ -96,9 +96,9 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         timercancel.schedule(new TimerTask() {
             public void run() {
                 dialog.dismiss();
-                timercancel.cancel(); //kill system time
+                timercancel.cancel();
             }
-        }, 1500); // for 1.5 second
+        }, 1500);
 
 
         /**
@@ -119,9 +119,9 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         timercancel.schedule(new TimerTask() {
             public void run() {
                 dialog.dismiss();
-                timercancel.cancel(); //kill system time
+                timercancel.cancel();
             }
-        }, 1500); // for 1.5 second
+        }, 1500);
 
         /**
          TextView txt = view.findViewById(R.id.text_dialog_personalizadotodook);
@@ -140,9 +140,9 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         timercancel.schedule(new TimerTask() {
             public void run() {
                 dialog.dismiss();
-                timercancel.cancel(); //kill system time
+                timercancel.cancel();
             }
-        }, 1500); // for 1.5 second
+        }, 1500);
 
         /**
          TextView txt = view.findViewById(R.id.text_dialog_personalizadonadacorrecto);
@@ -160,9 +160,9 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         timercancel.schedule(new TimerTask() {
             public void run() {
                 dialog.dismiss();
-                timercancel.cancel(); //kill system time
+                timercancel.cancel();
             }
-        }, 1500); // for 1.5 second
+        }, 1500);
         /**
          TextView txt = view.findViewById(R.id.text_dialog_personalizadodatosvacios);
          txt.setText("DATOS VACIOS");
