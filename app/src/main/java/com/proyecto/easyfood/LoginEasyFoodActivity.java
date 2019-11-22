@@ -13,6 +13,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class LoginEasyFoodActivity extends AppCompatActivity {
 
     private EditText etxtNumeroDni;
@@ -68,6 +71,14 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         builder.setView(view);
         final AlertDialog dialog = builder.create();
         dialog.show();
+        final Timer timercancel = new Timer();
+        timercancel.schedule(new TimerTask() {
+            public void run() {
+                dialog.dismiss();
+                timercancel.cancel(); //kill system time
+            }
+        }, 1500); // for 1.5 second
+
         /**
          TextView txt = view.findViewById(R.id.text_dialogcontrasena);
          txt.setText("Contraseña Incorrecta");
@@ -81,6 +92,15 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         builder.setView(view);
         final AlertDialog dialog = builder.create();
         dialog.show();
+        final Timer timercancel = new Timer();
+        timercancel.schedule(new TimerTask() {
+            public void run() {
+                dialog.dismiss();
+                timercancel.cancel(); //kill system time
+            }
+        }, 1500); // for 1.5 second
+
+
         /**
          TextView txt = view.findViewById(R.id.text_dialog_personalizadousuario);
          txt.setText("Usuario Incorrecto");
@@ -95,6 +115,13 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         builder.setView(view);
         final AlertDialog dialog = builder.create();
         dialog.show();
+        final Timer timercancel = new Timer();
+        timercancel.schedule(new TimerTask() {
+            public void run() {
+                dialog.dismiss();
+                timercancel.cancel(); //kill system time
+            }
+        }, 1500); // for 1.5 second
 
         /**
          TextView txt = view.findViewById(R.id.text_dialog_personalizadotodook);
@@ -109,6 +136,13 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         builder.setView(view);
         final AlertDialog dialog = builder.create();
         dialog.show();
+        final Timer timercancel = new Timer();
+        timercancel.schedule(new TimerTask() {
+            public void run() {
+                dialog.dismiss();
+                timercancel.cancel(); //kill system time
+            }
+        }, 1500); // for 1.5 second
 
         /**
          TextView txt = view.findViewById(R.id.text_dialog_personalizadonadacorrecto);
@@ -122,6 +156,13 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         builder.setView(view);
         final AlertDialog dialog = builder.create();
         dialog.show();
+        final Timer timercancel = new Timer();
+        timercancel.schedule(new TimerTask() {
+            public void run() {
+                dialog.dismiss();
+                timercancel.cancel(); //kill system time
+            }
+        }, 1500); // for 1.5 second
         /**
          TextView txt = view.findViewById(R.id.text_dialog_personalizadodatosvacios);
          txt.setText("DATOS VACIOS");

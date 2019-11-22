@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ProyectoEasyFood</string>
     <string name="iniciar_sesion">Iniciar sesión</string>
-    <string name="numero_dni">Numero de DNI</string>
+    <string name="numero_dni">Numero de Dni</string>
     <string name="contrasena">Contraseña</string>
     <string name="datos_vacios">DATOS VACIOS</string>
     <string name="datos_incorrecto">DATOS INCORRECTOS</string>
