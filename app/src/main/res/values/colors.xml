@@ -11,4 +11,5 @@
     <color name="colorDatos03">#1700FF</color>
     <color name="colorDatos04">#FF0000</color>
     <color name="colorPalabras">#ffffff</color>
+    <color name="colorBordeEdit">#9c9c9c</color>
 </resources>
