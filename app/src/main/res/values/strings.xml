@@ -8,6 +8,7 @@
     <string name="contraseña_incorrecta">CONTRASEÑA INCORRECTA</string>
     <string name="datos_correctos">Bienvenido a EASYFOOD</string>
     <string name="usuario_incorrecto">USUARIO INCORRECTO</string>
+    <string name="hombe_bienvenida">¡BIENVENIDO(A) A EASYFOOD!</string>
     <string name="title_activity_inicio_easy_food">InicioEasyFood</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
