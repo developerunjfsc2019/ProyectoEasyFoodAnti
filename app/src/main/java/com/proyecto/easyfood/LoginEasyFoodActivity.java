@@ -77,7 +77,7 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
                 dialog.dismiss();
                 timercancel.cancel();
             }
-        }, 1500);
+        }, 1000);
 
 
     }
@@ -95,7 +95,7 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
                 dialog.dismiss();
                 timercancel.cancel();
             }
-        }, 1500);
+        }, 1000);
 
 
 
@@ -115,7 +115,7 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
                 dialog.dismiss();
                 timercancel.cancel();
             }
-        }, 1500);
+        }, 1000);
 
 
 
@@ -133,7 +133,7 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
                 dialog.dismiss();
                 timercancel.cancel();
             }
-        }, 1500);
+        }, 1000);
 
 
     }
@@ -150,7 +150,7 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
                 dialog.dismiss();
                 timercancel.cancel();
             }
-        }, 1500);
+        }, 1000);
      
 
     }
