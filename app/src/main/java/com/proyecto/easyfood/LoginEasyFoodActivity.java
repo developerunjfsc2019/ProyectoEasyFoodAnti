@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import java.util.Timer;
@@ -23,6 +24,7 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
     private Button btnIniciarSesion;
     private Long dni;
     private String contrasena;
+    private ProgressBar loadingProgress;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,34 +32,50 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         etxtNumeroDni=(EditText)findViewById(R.id.etxtNumeroDni);
         etxtContrasena=(EditText)findViewById(R.id.etxtContrasena);
         btnIniciarSesion=(Button)findViewById(R.id.btnIniciarSesion);
+        loadingProgress=(ProgressBar)findViewById(R.id.regProgressBar);
+        loadingProgress.setVisibility(View.INVISIBLE);
 
         btnIniciarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-
-                try {
+                    btnIniciarSesion.setVisibility(View.INVISIBLE);
+                    loadingProgress.setVisibility(View.VISIBLE);
                     if(etxtNumeroDni.getText().toString().trim().isEmpty() || etxtContrasena.getText().toString().trim().isEmpty() ){
+
+
                         mostrarDialogoPersonalizadoDatosVacios();
-                    }else{
+                        btnIniciarSesion.setVisibility(View.VISIBLE);
+                        loadingProgress.setVisibility(View.INVISIBLE);
+                    }
+                    else{
                         dni=Long.parseLong(etxtNumeroDni.getText().toString().trim());
                         contrasena=etxtContrasena.getText().toString().trim();
 
                         if(((dni ==72812719)) && !contrasena.equals("72812719")){
                             mostrarDialogoPersonalizadoContrasena();
+                            btnIniciarSesion.setVisibility(View.VISIBLE);
+                            loadingProgress.setVisibility(View.INVISIBLE);
+
                         } if ((!(dni ==72812719)) && contrasena.equals("72812719")){
                             mostrarDialogoPersonalizadoUsuario();
+                            btnIniciarSesion.setVisibility(View.VISIBLE);
+                            loadingProgress.setVisibility(View.INVISIBLE);
                         } if ((!(dni ==72812719)) && !contrasena.equals("72812719")){
                             mostrarDialogoPersonalizadoNadaCorrecto();
+                            btnIniciarSesion.setVisibility(View.VISIBLE);
+                            loadingProgress.setVisibility(View.INVISIBLE);
+
                         } if (((dni ==72812719))  && contrasena.equals("72812719")) {
                             mostrarDialogoPersonalizadoTodoOk();
+
                             Intent intent = new Intent(getApplicationContext(), InicioEasyFood.class);
                             startActivity(intent);
                         }
+
                     }
-                }catch (Exception e){
-                    Toast.makeText(getApplicationContext(),"Error",Toast.LENGTH_LONG).show();
-                }
+
+
 
 
             }
