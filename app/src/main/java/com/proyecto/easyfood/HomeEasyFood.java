@@ -20,7 +20,7 @@ public class HomeEasyFood extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        texto=(TextView)findViewById(R.id.texttitulo);
+        texto=(TextView) findViewById(R.id.texttitulo);
 
     }
 

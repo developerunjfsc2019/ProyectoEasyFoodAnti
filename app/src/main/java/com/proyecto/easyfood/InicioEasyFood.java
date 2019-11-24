@@ -37,10 +37,13 @@ public class InicioEasyFood extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.nav_tools, R.id.nav_share, R.id.nav_send)
-                .setDrawerLayout(drawer)
-                .build();
+                R.id.nav_inicio,
+                R.id.nav_menu,
+                R.id.nav_informeasistencia,
+                R.id.nav_qr,
+                R.id.nav_perfil,
+                R.id.nav_reglamentointerno,
+                R.id.nav_cerrarsesion).setDrawerLayout(drawer).build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);

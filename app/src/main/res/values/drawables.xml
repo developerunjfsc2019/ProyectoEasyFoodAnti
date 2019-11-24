@@ -1,8 +1,11 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <item name="ic_menu_camera" type="drawable">@android:drawable/ic_menu_camera</item>
-    <item name="ic_menu_gallery" type="drawable">@android:drawable/ic_menu_gallery</item>
-    <item name="ic_menu_slideshow" type="drawable">@android:drawable/ic_menu_slideshow</item>
-    <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
-    <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
-    <item name="ic_menu_send" type="drawable">@android:drawable/ic_menu_send</item>
+    <item name="inicio" type="drawable">@drawable/inicio_side_bar_easyfood</item>
+    <item name="menu" type="drawable">@drawable/menu_side_bar_easyfood</item>
+    <item name="informeasistencia" type="drawable">@drawable/informe_inicio_easyfood</item>
+    <item name="qr" type="drawable">@drawable/codigoqr_inicio_easyfood</item>
+    <item name="perfil" type="drawable">@drawable/perfil_side_bar_easyfood</item>
+    <item name="reglamentointerno" type="drawable">@drawable/reglamento_side_bar_easyfood</item>
+    <item name="cerrarsesion" type="drawable">@drawable/cerrarsesion_side_bar_easyfood</item>
+
+
 </resources>

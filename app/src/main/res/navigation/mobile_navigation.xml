@@ -3,41 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_inicio">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.proyecto.easyfood.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_inicio"
+        android:name="com.proyecto.easyfood.ui.inicio.InicioFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_inicio" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.proyecto.easyfood.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_menu"
+        android:name="com.proyecto.easyfood.ui.menu.MenuFragment"
+        android:label="@string/menu_menu"
+        tools:layout="@layout/fragment_menu" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.proyecto.easyfood.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_informeasistencia"
+        android:name="com.proyecto.easyfood.ui.perfil.PerfilFragment"
+        android:label="@string/menu_informeasistencia"
+        tools:layout="@layout/fragment_informeasistencia" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.proyecto.easyfood.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_qr"
+        android:name="com.proyecto.easyfood.ui.reglamentointerno.ReglamentoInternoFragment"
+        android:label="@string/menu_qr"
+        tools:layout="@layout/fragment_qr" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.proyecto.easyfood.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:id="@+id/nav_perfil"
+        android:name="com.proyecto.easyfood.ui.qr.QRFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_perfil" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.proyecto.easyfood.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_reglamentointerno"
+        android:name="com.proyecto.easyfood.ui.informeasistencia.InformeAsistenciaFragment"
+        android:label="@string/menu_reglamentointerno"
+        tools:layout="@layout/fragment_reglamentointerno" />
+
+    <fragment
+        android:id="@+id/nav_cerrarsesion"
+        android:name="com.proyecto.easyfood.ui.informeasistencia.InformeAsistenciaFragment"
+        android:label="@string/menu_cerrarsesion"
+        tools:layout="@layout/fragment_cerrarsesion" />
 </navigation>
