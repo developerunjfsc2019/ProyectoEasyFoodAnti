@@ -37,6 +37,7 @@
                 android:icon="@drawable/cerrarsesion_side_bar_easyfood"
                 android:title="@string/menu_cerrarsesion"/>
 
+
         </menu>
     </item>
 </menu>

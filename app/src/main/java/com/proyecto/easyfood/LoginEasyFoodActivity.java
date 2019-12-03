@@ -29,10 +29,10 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        etxtNumeroDni=(EditText)findViewById(R.id.etxtNumeroDni);
-        etxtContrasena=(EditText)findViewById(R.id.etxtContrasena);
-        btnIniciarSesion=(Button)findViewById(R.id.btnIniciarSesion);
-        loadingProgress=(ProgressBar)findViewById(R.id.regProgressBar);
+        etxtNumeroDni=(EditText) findViewById(R.id.etxtNumeroDni);
+        etxtContrasena=(EditText) findViewById(R.id.etxtContrasena);
+        btnIniciarSesion=(Button) findViewById(R.id.btnIniciarSesion);
+        loadingProgress=(ProgressBar) findViewById(R.id.regProgressBar);
         loadingProgress.setVisibility(View.INVISIBLE);
 
         btnIniciarSesion.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +76,12 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show();
+    }
+
 
 
     private void mostrarDialogoPersonalizadoContrasena(){
@@ -117,6 +123,7 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         LayoutInflater inflater = getLayoutInflater();
         View view = inflater.inflate(R.layout.dialog_personalizadodatoscorrectos,null);
         builder.setView(view);
+
         final AlertDialog dialog = builder.create();
         dialog.show();
         final Timer timercancel = new Timer();

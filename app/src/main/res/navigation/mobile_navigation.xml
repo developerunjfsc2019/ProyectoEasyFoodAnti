@@ -14,35 +14,36 @@
         android:id="@+id/nav_menu"
         android:name="com.proyecto.easyfood.ui.menu.MenuFragment"
         android:label="@string/menu_menu"
-        tools:layout="@layout/fragment_menu" />
+        tools:layout="@layout/fragment_inicio" />
 
     <fragment
         android:id="@+id/nav_informeasistencia"
-        android:name="com.proyecto.easyfood.ui.perfil.PerfilFragment"
+        android:name="com.proyecto.easyfood.ui.informeasistencia.InformeAsistenciaFragment"
         android:label="@string/menu_informeasistencia"
         tools:layout="@layout/fragment_informeasistencia" />
 
     <fragment
         android:id="@+id/nav_qr"
-        android:name="com.proyecto.easyfood.ui.reglamentointerno.ReglamentoInternoFragment"
+        android:name="com.proyecto.easyfood.ui.qr.QRFragment"
         android:label="@string/menu_qr"
         tools:layout="@layout/fragment_qr" />
 
     <fragment
         android:id="@+id/nav_perfil"
-        android:name="com.proyecto.easyfood.ui.qr.QRFragment"
+        android:name="com.proyecto.easyfood.ui.perfil.PerfilFragment"
         android:label="@string/menu_perfil"
         tools:layout="@layout/fragment_perfil" />
 
     <fragment
         android:id="@+id/nav_reglamentointerno"
-        android:name="com.proyecto.easyfood.ui.informeasistencia.InformeAsistenciaFragment"
+        android:name="com.proyecto.easyfood.ui.reglamentointerno.ReglamentoInternoFragment"
         android:label="@string/menu_reglamentointerno"
         tools:layout="@layout/fragment_reglamentointerno" />
 
     <fragment
         android:id="@+id/nav_cerrarsesion"
-        android:name="com.proyecto.easyfood.ui.informeasistencia.InformeAsistenciaFragment"
+        android:name="com.proyecto.easyfood.ui.cerrarsesion.CerrarSesionFragment"
         android:label="@string/menu_cerrarsesion"
         tools:layout="@layout/fragment_cerrarsesion" />
+
 </navigation>

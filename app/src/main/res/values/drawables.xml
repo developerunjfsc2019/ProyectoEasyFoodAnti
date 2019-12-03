@@ -1,11 +1,3 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <item name="inicio" type="drawable">@drawable/inicio_side_bar_easyfood</item>
-    <item name="menu" type="drawable">@drawable/menu_side_bar_easyfood</item>
-    <item name="informeasistencia" type="drawable">@drawable/informe_inicio_easyfood</item>
-    <item name="qr" type="drawable">@drawable/codigoqr_inicio_easyfood</item>
-    <item name="perfil" type="drawable">@drawable/perfil_side_bar_easyfood</item>
-    <item name="reglamentointerno" type="drawable">@drawable/reglamento_side_bar_easyfood</item>
-    <item name="cerrarsesion" type="drawable">@drawable/cerrarsesion_side_bar_easyfood</item>
-
 
 </resources>

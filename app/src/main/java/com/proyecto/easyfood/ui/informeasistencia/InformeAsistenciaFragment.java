@@ -24,7 +24,7 @@ public class InformeAsistenciaFragment extends Fragment {
                 ViewModelProviders.of(this).get(InformeAsistenciaViewModel.class);
         View root = inflater.inflate(R.layout.fragment_informeasistencia, container, false);
         final TextView textView = root.findViewById(R.id.text_informeasistencia);
-        informeAsistenciaViewModel.getText().observe(this, new Observer<String>() {
+        informeAsistenciaViewModel.getText().observe(this,  new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
