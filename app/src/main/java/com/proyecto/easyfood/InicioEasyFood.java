@@ -41,8 +41,8 @@ public class InicioEasyFood extends AppCompatActivity {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
 
         NavigationView navigationView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+        // Passing each MenuEasyFood ID as a set of Ids because each
+        // MenuEasyFood should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
 
                 R.id.nav_inicio, R.id.nav_menu, R.id.nav_informeasistencia,
@@ -110,7 +110,7 @@ public class InicioEasyFood extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+        // Inflate the MenuEasyFood; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.inicio_easy_food, menu);
         return true;
     }
