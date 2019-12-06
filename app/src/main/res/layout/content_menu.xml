@@ -30,30 +30,35 @@
         android:id="@+id/textView2"
         android:layout_width="308dp"
         android:layout_height="31dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="serif"
         android:text="MENU DEL DIA DE HOY"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="325dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="408dp"
+        android:layout_width="348dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="384dp"
+        android:fontFamily="serif"
         android:text="MENU DEL DIA DE MAÑANA"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:id="@+id/scrollView2"
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
         android:layout_width="296dp"
         android:layout_height="214dp"
         android:layout_marginStart="45dp"
@@ -63,16 +68,18 @@
         android:layout_marginRight="66dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.027"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="300dp"
             android:layout_height="200dp"
+            android:background="@drawable/black"
+            android:fontFamily="sans-serif-condensed-medium"
             android:text="DESAYUNO\n
         -Pan con mantequilla\n
         -Pan con mermelada\n
@@ -87,6 +94,7 @@
         -Agua de manzanilla\n
         -Mazamorra morada"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/cardview_dark_background"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -98,6 +106,7 @@
 
     <ScrollView
         android:id="@+id/scrollView3"
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
         android:layout_width="296dp"
         android:layout_height="214dp"
         android:layout_marginStart="45dp"
@@ -110,13 +119,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.871"
+        app:layout_constraintVertical_bias="0.774"
         tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="300dp"
             android:layout_height="200dp"
+            android:background="@drawable/black"
             android:text="DESAYUNO\n
         -Pan con huevo\n
         -Pan con camote\n
@@ -130,13 +140,15 @@
         -Guiso de atun\n
         -Agua de manzanilla\n
         -Mazamorra piña"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/cardview_dark_background"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.405"
+            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.849" />
+            app:layout_constraintVertical_bias="0.196" />
 
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
