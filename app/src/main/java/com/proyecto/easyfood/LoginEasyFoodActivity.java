@@ -34,52 +34,66 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
         btnIniciarSesion=(Button) findViewById(R.id.btnIniciarSesion);
         loadingProgress=(ProgressBar) findViewById(R.id.regProgressBar);
         loadingProgress.setVisibility(View.INVISIBLE);
-
         btnIniciarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                    btnIniciarSesion.setVisibility(View.INVISIBLE);
-                    loadingProgress.setVisibility(View.VISIBLE);
-                    if(etxtNumeroDni.getText().toString().trim().isEmpty() || etxtContrasena.getText().toString().trim().isEmpty() ){
+                btnIniciarSesion.setVisibility(View.INVISIBLE);
+                loadingProgress.setVisibility(View.VISIBLE);
+                if(etxtNumeroDni.getText().toString().trim().isEmpty() || etxtContrasena.getText().toString().trim().isEmpty() ){
 
+                    mostrarDialogoPersonalizadoDatosVacios();
+                    btnIniciarSesion.setVisibility(View.VISIBLE);
+                    loadingProgress.setVisibility(View.INVISIBLE);
+                    btnIniciarSesion.setVisibility(View.VISIBLE);
+                }
+                else{
+                    dni=Long.parseLong(etxtNumeroDni.getText().toString().trim());
+                    contrasena=etxtContrasena.getText().toString().trim();
 
-                        mostrarDialogoPersonalizadoDatosVacios();
+                    if(((dni ==72812719)) && !contrasena.equals("72812719")){
+                        mostrarDialogoPersonalizadoContrasena();
                         btnIniciarSesion.setVisibility(View.VISIBLE);
                         loadingProgress.setVisibility(View.INVISIBLE);
+
+                    } if ((!(dni ==72812719)) && contrasena.equals("72812719")){
+                        mostrarDialogoPersonalizadoUsuario();
+                        btnIniciarSesion.setVisibility(View.VISIBLE);
+                        loadingProgress.setVisibility(View.INVISIBLE);
+                    } if ((!(dni ==72812719)) && !contrasena.equals("72812719")){
+                        mostrarDialogoPersonalizadoNadaCorrecto();
+                        btnIniciarSesion.setVisibility(View.VISIBLE);
+                        loadingProgress.setVisibility(View.INVISIBLE);
+
+                    } if (((dni ==72812719))  && contrasena.equals("72812719")) {
+                        mostrarDialogoPersonalizadoTodoOk();
+                        Intent intent = new Intent(getApplicationContext(), InicioEasyFoodActivity.class);
+                        btnIniciarSesion.setVisibility(View.VISIBLE);
+                        loadingProgress.setVisibility(View.INVISIBLE);
+                        startActivity(intent);
+
+
                     }
-                    else{
-                        dni=Long.parseLong(etxtNumeroDni.getText().toString().trim());
-                        contrasena=etxtContrasena.getText().toString().trim();
-
-                        if(((dni ==72812719)) && !contrasena.equals("72812719")){
-                            mostrarDialogoPersonalizadoContrasena();
-                            btnIniciarSesion.setVisibility(View.VISIBLE);
-                            loadingProgress.setVisibility(View.INVISIBLE);
-
-                        } if ((!(dni ==72812719)) && contrasena.equals("72812719")){
-                            mostrarDialogoPersonalizadoUsuario();
-                            btnIniciarSesion.setVisibility(View.VISIBLE);
-                            loadingProgress.setVisibility(View.INVISIBLE);
-                        } if ((!(dni ==72812719)) && !contrasena.equals("72812719")){
-                            mostrarDialogoPersonalizadoNadaCorrecto();
-                            btnIniciarSesion.setVisibility(View.VISIBLE);
-                            loadingProgress.setVisibility(View.INVISIBLE);
-
-                        } if (((dni ==72812719))  && contrasena.equals("72812719")) {
-                            mostrarDialogoPersonalizadoTodoOk();
-                            Intent intent = new Intent(getApplicationContext(), InicioEasyFood.class);
-                            startActivity(intent);
-                        }
-                    }
+                }
             }
         });
+
+
     }
+
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show();
+
+        //Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show();
+    }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(getApplicationContext(), SplashEasyFoodActivity.class);
+        startActivity(intent);
+        this.finish();
     }
 
 

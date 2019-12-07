@@ -77,11 +77,11 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="43dp"
         android:layout_height="37dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnIniciarSesion"
-        app:layout_constraintEnd_toEndOf="@+id/btnIniciarSesion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/btnIniciarSesion"
-        app:layout_constraintTop_toTopOf="@+id/btnIniciarSesion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.774" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

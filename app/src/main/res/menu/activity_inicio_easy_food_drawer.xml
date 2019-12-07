@@ -5,39 +5,43 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/inicio"
+            android:id="@+id/nav_home"
             android:icon="@drawable/inicio_side_bar_easyfood"
             android:title="@string/menu_inicio" />
         <item
-            android:id="@+id/menu"
+            android:id="@+id/nav_menu"
             android:icon="@drawable/menu_side_bar_easyfood"
             android:title="@string/menu_menu" />
         <item
-            android:id="@+id/informedeasistencia"
+            android:id="@+id/nav_asistencia"
             android:icon="@drawable/asistencia_side_bar_easyfood"
+            android:title="@string/menu_asistencia" />
+        <item
+            android:id="@+id/nav_qr"
+            android:icon="@drawable/codigoqr_side_bar_easyfood"
+            android:title="@string/menu_qr" />
+        <item
+            android:id="@+id/nav_informeasistencia"
+            android:icon="@drawable/informe_inicio_easyfood"
             android:title="@string/menu_informeasistencia" />
         <item
-            android:id="@+id/codigoqr"
-            android:icon="@drawable/codigoqr_side_bar_easyfood"
-            android:title="@string/menu_qr"/>
-        <item
-            android:id="@+id/perfil"
+            android:id="@+id/nav_perfil"
             android:icon="@drawable/perfil_side_bar_easyfood"
             android:title="@string/menu_perfil" />
+
     </group>
 
-    <item android:title="Comedor Universitario">
+    <item android:title="Comedor Faustiniano">
         <menu>
             <item
-                android:id="@+id/reglamentointerno"
+                android:id="@+id/nav_reglamentointerno"
                 android:icon="@drawable/reglamento_side_bar_easyfood"
                 android:title="@string/menu_reglamentointerno" />
             <item
-                android:id="@+id/cerrarsesion"
+                android:id="@+id/nav_cerrarsesion"
                 android:icon="@drawable/cerrarsesion_side_bar_easyfood"
-                android:title="@string/menu_cerrarsesion"/>
-
-
+                android:title="@string/menu_cerrarsesion" />
         </menu>
     </item>
+
 </menu>
