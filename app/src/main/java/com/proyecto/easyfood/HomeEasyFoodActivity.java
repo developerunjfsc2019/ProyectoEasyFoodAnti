@@ -12,14 +12,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class HomeEasyFoodActivity extends AppCompatActivity {
+public class HomeEasyFood extends AppCompatActivity {
 
 
     TextView texto;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_inicio);
+        setContentView(R.layout.activity_home);
         texto=(TextView) findViewById(R.id.texttitulo);
 
     }
