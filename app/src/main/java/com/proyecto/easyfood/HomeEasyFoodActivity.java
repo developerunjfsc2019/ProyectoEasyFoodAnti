@@ -5,7 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class HomeEasyFood extends AppCompatActivity {
+public class HomeEasyFoodActivity extends AppCompatActivity {
 
 
     @Override

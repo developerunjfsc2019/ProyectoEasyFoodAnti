@@ -12,7 +12,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -29,10 +28,10 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        etxtNumeroDni=(EditText) findViewById(R.id.etxtNumeroDni);
-        etxtContrasena=(EditText) findViewById(R.id.etxtContrasena);
-        btnIniciarSesion=(Button) findViewById(R.id.btnIniciarSesion);
-        loadingProgress=(ProgressBar) findViewById(R.id.regProgressBar);
+        etxtNumeroDni= findViewById(R.id.etxtNumeroDni);
+        etxtContrasena=findViewById(R.id.etxtContrasena);
+        btnIniciarSesion= findViewById(R.id.btnIniciarSesion);
+        loadingProgress= findViewById(R.id.regProgressBar);
         loadingProgress.setVisibility(View.INVISIBLE);
         btnIniciarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,7 +66,7 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
 
                     } if (((dni ==72812719))  && contrasena.equals("72812719")) {
                         mostrarDialogoPersonalizadoTodoOk();
-                        Intent intent = new Intent(getApplicationContext(), InicioEasyFood.class);
+                        Intent intent = new Intent(getApplicationContext(), InicioEasyFoodActivity.class);
                         startActivity(intent);
                     }
                 }
