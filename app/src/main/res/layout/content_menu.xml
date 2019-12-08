@@ -8,124 +8,103 @@
     tools:context=".MenuEasyFood"
     tools:showIn="@layout/activity_menu">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="56dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="408dp"
-        android:layout_marginLeft="408dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginBottom="678dp"
-        android:background="@drawable/atras"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.916" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="308dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="80dp"
-        android:fontFamily="serif"
-        android:text="MENU DEL DIA DE HOY"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/colorAccent"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.32"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="348dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="384dp"
-        android:fontFamily="serif"
-        android:text="MENU DEL DIA DE MAÑANA"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/colorAccent"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
     <ScrollView
-        android:id="@+id/scrollView2"
-        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
-        android:layout_width="296dp"
-        android:layout_height="214dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginRight="66dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:background="@drawable/black"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="DESAYUNO\n
-        -Pan con mantequilla\n
-        -Pan con mermelada\n
-        -Taza de quaquer\n
-        -Vaso con jugo de papaya\nALMUERZO\n
-        -Arroz a la jardinera\n
-        -Seco de pollo\n
-        -Ensalada de veduras\n
-        -Manzana\nCENA\n
-        -Pollo al sillao\n
-        -Arroz blanco\n
-        -Agua de manzanilla\n
-        -Mazamorra morada"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="56dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/atras" />
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="308dp"
+                android:layout_height="31dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="MENU DEL DIA DE HOY"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.32"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="DESAYUNO\n
+            -Pan con mantequilla\n
+            -Pan con mermelada\n
+            -Taza de quaquer\n
+            -Vaso con jugo de papaya\nALMUERZO\n
+            -Arroz a la jardinera\n
+            -Seco de pollo\n
+            -Ensalada de veduras\n
+            -Manzana\nCENA\n
+            -Pollo al sillao\n
+            -Arroz blanco\n
+            -Agua de manzanilla\n
+            -Mazamorra morada"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.196" />
+
+            <TextView
+            android:id="@+id/textView4"
+            android:layout_width="348dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+            android:fontFamily="serif"
+            android:text="MENU DEL DIA DE MAÑANA"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textColor="@color/cardview_dark_background"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintHorizontal_bias="0.523"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.196" />
-    </ScrollView>
-
-    <ScrollView
-        android:id="@+id/scrollView3"
-        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
-        android:layout_width="296dp"
-        android:layout_height="214dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginRight="66dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.774"
-        tools:ignore="MissingConstraints">
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="300dp"
-            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="@drawable/black"
             android:text="DESAYUNO\n
         -Pan con huevo\n
@@ -150,5 +129,12 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.196" />
 
+
+
+        </LinearLayout>
+
     </ScrollView>
+</LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -67,37 +67,14 @@ public class LoginEasyFoodActivity extends AppCompatActivity {
 
                     } if (((dni ==72812719))  && contrasena.equals("72812719")) {
                         mostrarDialogoPersonalizadoTodoOk();
-                        Intent intent = new Intent(getApplicationContext(), InicioEasyFoodActivity.class);
-                        btnIniciarSesion.setVisibility(View.VISIBLE);
-                        loadingProgress.setVisibility(View.INVISIBLE);
+                        Intent intent = new Intent(getApplicationContext(), InicioEasyFood.class);
                         startActivity(intent);
-
-
                     }
                 }
             }
         });
 
-
     }
-
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-
-        //Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show();
-    }
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        Intent intent = new Intent(getApplicationContext(), SplashEasyFoodActivity.class);
-        startActivity(intent);
-        this.finish();
-    }
-
-
-
     private void mostrarDialogoPersonalizadoContrasena(){
         AlertDialog.Builder builder = new AlertDialog.Builder(LoginEasyFoodActivity.this);
         LayoutInflater inflater = getLayoutInflater();
