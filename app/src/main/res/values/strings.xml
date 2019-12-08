@@ -25,7 +25,7 @@
     <string name="menu_perfil">Perfil</string>
     <string name="menu_reglamentointerno">Reglamento Interno</string>
     <string name="menu_cerrarsesion">Cerrar Sesión</string>
-
+    <string name="codigo_qr">Codigo QR</string>
 
 
     <string name="title_activity_home_easy_food">HomeEasyFood</string>
