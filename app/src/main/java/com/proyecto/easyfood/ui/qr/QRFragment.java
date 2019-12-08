@@ -43,6 +43,7 @@ public class QRFragment extends Fragment {
                     imagen.setImageBitmap(bitmap);
                 }catch(WriterException e){
                     e.printStackTrace();
+
                 }
             }
         });
