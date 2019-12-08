@@ -22,10 +22,24 @@
     <string name="menu_asistencia">Asistencia</string>
     <string name="menu_qr">QR</string>
     <string name="menu_informeasistencia">Informe de Asistencia</string>
-    <string name="menu_perfil">Perfil</string>
-    <string name="menu_reglamentointerno">Reglamento Interno</string>
-    <string name="menu_cerrarsesion">Cerrar Sesión</string>
     <string name="codigo_qr">Codigo QR</string>
+    <string name="perfil_titulo">Perfil del Estudiante</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="reglamentointerno_titulo">Reglamento Interno</string>
+    <string name="menu_reglamentointerno">Reglamento Interno</string>
+    <string name="cerrarsesion_titulo">Cerrar Sesión</string>
+    <string name="menu_cerrarsesion">Cerrar Sesión</string>
+    <string name="nombres_apellidos">NICHO VIRU WIGBERTO MARTIN</string>
+    <string name="codigouni_usuario">0333161000</string>
+    <string name="dni_usuario">52635263</string>
+    <string name="email_usuario">wmnichov@hotmail.com</string>
+    <string name="telefono_usuario">2363656</string>
+    <string name="celular_usuario">966584578</string>
+    <string name="estado_usuario">LIBRE</string>
+    <string name="boton_editarperfil">Editar</string>
+    <string name="editarperfil_titulo">Editar Perfil del Estudiante</string>
+    <string name="boton_guardar">Guardar Datos</string>
+    <string name="datos_completos">USTED HA ACTUALIZADO CON EXITO SUS DATOS</string>
 
 
     <string name="title_activity_home_easy_food">HomeEasyFood</string>

@@ -7,9 +7,22 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.proyecto.easyfood.ui.inicio.InicioFragment"
+        android:name="com.proyecto.easyfood.ui.inicio.InicioEasyFoodActivity"
         android:label="@string/menu_inicio"
-        tools:layout="@layout/fragment_inicio" />
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_menu"
+            app:destination="@id/nav_menu" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_asistencia"
+            app:destination="@id/nav_asistencia" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_qr"
+            app:destination="@id/nav_qr" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_informeasistencia"
+            app:destination="@id/nav_informeasistencia" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_menu"
@@ -37,9 +50,23 @@
 
     <fragment
         android:id="@+id/nav_perfil"
-        android:name="com.proyecto.easyfood.ui.perfil.PerfilFragment"
-        android:label="@string/menu_perfil"
-        tools:layout="@layout/fragment_perfil" />
+        android:name="com.proyecto.easyfood.ui.perfil.PerfilEasyFoodActivity"
+        android:label="@string/perfil_titulo"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_nav_perfil_to_nav_editarperfil"
+            app:destination="@id/nav_editarperfil" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_editarperfil"
+        android:name="com.proyecto.easyfood.ui.editarperfil.EditarPerfilEasyFoodActivity"
+        android:label="@string/editarperfil_titulo"
+        tools:layout="@layout/fragment_editarperfil" >
+        <action
+            android:id="@+id/action_nav_editarperfil_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_reglamentointerno"

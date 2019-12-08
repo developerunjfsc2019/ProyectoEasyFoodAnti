@@ -11,11 +11,14 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".InicioEasyFood"
+            android:name=".InicioEasyFoodActivity"
             android:label="@string/title_activity_inicio_easy_food"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".LoginEasyFoodActivity"
+            android:theme="@style/splashTheme" />
+        <activity
+            android:name=".HomeEasyFoodActivity"
             android:theme="@style/splashTheme" />
         <activity
             android:name=".SplashEasyFoodActivity"
