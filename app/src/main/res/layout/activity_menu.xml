@@ -15,5 +15,4 @@
         layout="@layout/content_menu"
         android:layout_width="439dp" />
 
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
