@@ -3,6 +3,7 @@ package com.proyecto.easyfood;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -112,8 +113,16 @@ public class InicioEasyFoodActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id=item.getItemId();
+        if (id==R.id.action_cerrarsesion){
+            finish();
+            System.exit(0);
+        }
 
-
+        return super.onOptionsItemSelected(item);
+    }
 
 
 }

@@ -11,6 +11,8 @@
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay"/>
 
-    <include layout="@layout/content_menu" />
+    <include
+        layout="@layout/content_menu"
+        android:layout_width="439dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
