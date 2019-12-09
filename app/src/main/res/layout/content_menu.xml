@@ -54,17 +54,17 @@
                         android:id="@+id/textView2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="80dp"
+                        android:layout_centerHorizontal="false"
+                        android:layout_marginTop="30dp"
                         android:fontFamily="serif"
                         android:gravity="center"
 
                         android:text="MENU DEL DIA DE HOY"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                         android:textColor="@color/colorAccent"
-                        android:textSize="24sp"
+                        android:textSize="28sp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.32"
+                        app:layout_constraintHorizontal_bias="0.80"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,25 +72,16 @@
                         android:id="@+id/textView6"
                         android:layout_width="match_parent"
 
-                        android:layout_height="match_parent"
+                        android:layout_height="513dp"
                         android:background="@drawable/black"
                         android:fontFamily="sans-serif-condensed-medium"
-                        android:text="DESAYUNO\n
-            -Pan con mantequilla\n
-            -Pan con mermelada\n
-            -Taza de quaquer\n
-            -Vaso con jugo de papaya\nALMUERZO\n
-            -Arroz a la jardinera\n
-            -Seco de pollo\n
-            -Ensalada de veduras\n
-            -Manzana\nCENA\n
-            -Pollo al sillao\n
-            -Arroz blanco\n
-            -Agua de manzanilla\n
-            -Mazamorra morada"
+                        android:text="\n     DESAYUNO\n
+                        \n             * Pan con mantequilla\n             * Pan con mermelada\n             * Taza de quaquer\n             * Vaso con jugo de papaya\n
+                        \n     ALMUERZO\n             * Arroz a la jardinera\n             * Seco de pollo\n             * Ensalada de verduras\n             * Manzana\n
+                        \n     CENA\n             * Pollo al sillao\n             * Arroz blanco\n             * Agua de manzanilla\n             * Mazamorra morada"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                         android:textColor="@color/cardview_dark_background"
-                        android:textSize="18sp"
+                        android:textSize="22dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.491"
@@ -106,7 +97,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:scrollbarSize="2dp">
 
 
                     <TextView
@@ -114,13 +106,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="10dp"
                         android:fontFamily="serif"
                         android:gravity="center"
                         android:text="MENU DEL DIA DE MAÑANA"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                         android:textColor="@color/colorAccent"
-                        android:textSize="24sp"
+                        android:textSize="28sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.523"
                         app:layout_constraintStart_toStartOf="parent"
@@ -132,28 +124,31 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/black"
                         android:fontFamily="sans-serif-condensed-medium"
-                        android:text="DESAYUNO\n
-        -Pan con huevo\n
-        -Pan con camote\n
-        -Taza de punki\n
-        -Vaso con jugo de piña\nALMUERZO\n
-        -Arroz son pollo\n
-        -Sopa de verduras\n
-        -Agua de maracuyá\n
-        -Plátano\nCENA\n
-        -Tallarines rojos\n
-        -Guiso de atun\n
-        -Agua de manzanilla\n
-        -Mazamorra piña"
+                        android:text="\n     DESAYUNO
+        \n             * Pan con huevo
+        \n             * Pan con camote
+        \n             * Taza de punki
+        \n             * Vaso con jugo de piña
+        \n     ALMUERZO\n
+        \n             * Arroz con pollo
+        \n             * Sopa de verduras
+        \n             * Agua de maracuyá
+        \n             * Plátano
+        \n     CENA
+        \n             * Tallarines rojos
+        \n             * Guiso de atún
+        \n             * Agua de manzanilla
+        \n             * Mazamorra de piña
+        \n
+        \n"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                         android:textColor="@color/cardview_dark_background"
-                        android:textSize="18sp"
+                        android:textSize="22dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.491"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.196" />
+                        app:layout_constraintVertical_bias="1.0" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
