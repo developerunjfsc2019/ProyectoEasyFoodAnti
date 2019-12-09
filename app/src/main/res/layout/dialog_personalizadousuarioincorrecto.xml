@@ -26,7 +26,7 @@
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:scrollbarDefaultDelayBeforeFade="400"
-        app:srcCompat="@drawable/estado_usuario" />
+        app:srcCompat="@drawable/estado_usuario2" />
 
 
 </LinearLayout>
