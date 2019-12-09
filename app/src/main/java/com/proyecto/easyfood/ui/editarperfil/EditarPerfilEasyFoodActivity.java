@@ -20,7 +20,7 @@ import java.util.TimerTask;
 
 public class EditarPerfilEasyFoodActivity extends Fragment {
 
-    private EditarPerfilEasyFoodActivityViewModel editarPerfilEasyFoodActivityViewModel;
+
     private Button btnGuardarDatos;
     private EditText etxtEmail;
     private EditText etxtTelefono;
@@ -31,8 +31,6 @@ public class EditarPerfilEasyFoodActivity extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        editarPerfilEasyFoodActivityViewModel =
-                ViewModelProviders.of(this).get(EditarPerfilEasyFoodActivityViewModel.class);
         View root = inflater.inflate(R.layout.fragment_editarperfil, container, false);
         btnGuardarDatos=root.findViewById(R.id.btnGuardarDatos);
         etxtEmail=root.findViewById(R.id.etxtEmail);

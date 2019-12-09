@@ -26,27 +26,31 @@ public class QRFragment extends Fragment {
     Button gen_qr;
     ImageView imagen;
     String textQR;
+
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_qr, container, false);
-        gen_qr = root.findViewById(R.id.btnCodigoQR);
-        imagen=root.findViewById(R.id.imgvwQR);
-        gen_qr.setOnClickListener(new View.OnClickListener(){
+        gen_qr=root.findViewById( R.id.btnCodigoQR);
+        imagen=root.findViewById( R.id.imgvwQR);
+        gen_qr.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                textQR = "text codigo qr";
-                MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
+            public void onClick(View view) {
+                textQR="CodigoQRComedor";
+                MultiFormatWriter multiFormatWriter=new MultiFormatWriter();
                 try {
-                    BitMatrix bitMatrix = multiFormatWriter.encode(textQR, BarcodeFormat.QR_CODE,200,200);
-                    BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
-                    Bitmap bitmap = barcodeEncoder.createBitmap(bitMatrix);
+                    BitMatrix bitMatrix= multiFormatWriter.encode(textQR, BarcodeFormat.QR_CODE,200,200);
+                    BarcodeEncoder barcodeEncoder=new BarcodeEncoder();
+                    Bitmap bitmap= barcodeEncoder.createBitmap(bitMatrix);
                     imagen.setImageBitmap(bitmap);
-                }catch(WriterException e){
+                }
+                catch (WriterException e){
                     e.printStackTrace();
-
                 }
             }
         });
+
+
         return root;
     }
 }

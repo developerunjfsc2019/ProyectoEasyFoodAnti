@@ -16,15 +16,12 @@ import com.proyecto.easyfood.R;
 
 public class PerfilEasyFoodActivity extends Fragment {
 
-    private PerfilEasyFoodActivityViewModel perfilEasyFoodActivityViewModel;
-
 
     private Button btnEditarPerfil;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        perfilEasyFoodActivityViewModel =
-                ViewModelProviders.of(this).get(PerfilEasyFoodActivityViewModel.class);
+
         View root = inflater.inflate(R.layout.fragment_perfil, container, false);
         btnEditarPerfil=root.findViewById( R.id.btnEditarPerfil);
         btnEditarPerfil.setOnClickListener(new View.OnClickListener() {
