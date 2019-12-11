@@ -113,16 +113,7 @@ public class InicioEasyFoodActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        int id=item.getItemId();
-        if (id==R.id.action_cerrarsesion){
-            finish();
-            System.exit(0);
-        }
 
-        return super.onOptionsItemSelected(item);
-    }
 
 
 }
