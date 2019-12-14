@@ -40,6 +40,7 @@
     <string name="editarperfil_titulo">Editar Perfil del Estudiante</string>
     <string name="boton_guardar">Guardar Datos</string>
     <string name="datos_completos">USTED HA ACTUALIZADO CON EXITO SUS DATOS</string>
+    <string name="confirmacion_asistencia">USTED HA REGISTRADO CON ÉXITO SU ASISTENCIA</string>
 
 
     <string name="title_activity_home_easy_food">HomeEasyFood</string>
